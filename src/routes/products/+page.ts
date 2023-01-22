@@ -1,4 +1,5 @@
 import type { PageData, PageLoad } from "./$types";
+import { secret } from '../lib/server/secrets';
 
 export const load: PageLoad = async({data, fetch, depends}) => {
     fetch('https://dummyjson.com/products')

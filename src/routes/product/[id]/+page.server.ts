@@ -6,8 +6,8 @@ export const load: PageServerLoad = async({ params }) => {
     const product = products.products.find((p) => p.id === +params.id)
 
     if (!product) {
-        throw redirect(301, '/products')
-        // throw error(404, 'Product not found');
+        // throw redirect(301, '/products')
+        throw error(404, {message: 'Product not found', code: 'NOT FOUND'});
     }
 
     return {

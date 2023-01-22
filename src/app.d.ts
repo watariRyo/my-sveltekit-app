@@ -2,8 +2,15 @@
 // for information about these interfaces
 // and what to do when importing types
 declare namespace App {
-	// interface Error {}
-	// interface Locals {}
+	interface Error {
+		code?: string
+	}
+	interface Locals {
+		user?: {
+			id: number,
+			name: string
+		}
+	}
 	// interface PageData {
 	// 	products?: {id: number }[];
 	// }
