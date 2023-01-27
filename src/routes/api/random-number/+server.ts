@@ -4,4 +4,4 @@ export const GET: RequestHandler = () => {
     return new Response(String(Math.random()));
 }
 
-export const prerender = true;
+// export const prerender = true;
